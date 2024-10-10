@@ -1,8 +1,15 @@
 import { useParams } from "react-router-dom";
 import GoToHomeButton from "../../components/GoToHomeButton";
+import { useEffect } from "react";
 
 export default function YouDied() {
   const {number} = useParams();
+  const audio = new Audio('/sounds/monsters/gnomage.mp3');
+
+  useEffect(() => {
+    audio.play();
+    localStorage.setItem('time', 0);
+  }, []);
 
   return (
     <div className="flex flex-col justify-center items-center mt-8">
