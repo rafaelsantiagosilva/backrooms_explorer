@@ -1,7 +1,12 @@
 import Button from "./Button";
 
 export default function ButtonsNavigation() {
+  const playButtonSound = () => {
+    new Audio('/sounds/button-hover.mp3').play();
+  }
+
   const initPlayer = () => {
+    playButtonSound();
     localStorage.setItem('playerHp', 100);
     localStorage.setItem('playerAtk', 15);
     localStorage.setItem('time', 120);
@@ -15,7 +20,7 @@ export default function ButtonsNavigation() {
       {/* <a href="/rules">
         <Button>Regras</Button>
       </a> */}
-      <a href="/bestiary">
+      <a href="/bestiary" onMouseEnter={playButtonSound}>
         <Button>Bestiário</Button>
       </a>
     </nav>
