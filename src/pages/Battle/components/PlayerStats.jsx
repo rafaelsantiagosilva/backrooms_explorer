@@ -5,7 +5,7 @@ import Player from "../../../classes/Player.js";
 import { useNavigate, useParams } from "react-router-dom";
 import { FaHeartbeat } from "react-icons/fa";
 
-export default function PlayerStats({ monster, setMonster, aim, setAim }) {
+export default function PlayerStats({ monster, setMonster, aim }) {
   const [player, setPlayer] = useState(null);
   const { number } = useParams();
   const navigate = useNavigate();
@@ -78,5 +78,4 @@ PlayerStats.propTypes = {
   monster: PropTypes.object.isRequired,
   setMonster: PropTypes.func.isRequired,
   aim: PropTypes.number.isRequired,
-  setAim: PropTypes.func.isRequired
 };
