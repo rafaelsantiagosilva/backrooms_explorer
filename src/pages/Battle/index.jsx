@@ -40,8 +40,10 @@ export default function Battle() {
   }, []);
 
   useEffect(() => {
-    if (monster)
+    if (monster) {
       setMonsterRandomSkills(getRandomSkills(monster));
+      new Audio('/sounds/monsters/' + monster.audio).play();
+    }
   }, [monster]);
 
   useEffect(() => {
