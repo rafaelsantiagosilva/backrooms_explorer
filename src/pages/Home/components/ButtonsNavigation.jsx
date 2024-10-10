@@ -1,8 +1,17 @@
+import { useEffect } from "react";
 import Button from "./Button";
 
 export default function ButtonsNavigation() {
+  const buttonSound = new Audio('/sounds/button-hover.mp3');
+
+  useEffect(() => {
+    buttonSound.load();
+  }, []);
+
   const playButtonSound = () => {
-    new Audio('/sounds/button-hover.mp3').play();
+    console.log('> Playing audio');
+    buttonSound.volume = 0.1;
+    buttonSound.play();
   }
 
   const initPlayer = () => {
