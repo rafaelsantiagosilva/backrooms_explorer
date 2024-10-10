@@ -2,51 +2,87 @@
   {
     "name": "Ar Mofado",
     "image": "musty-air.png",
+    "audio": "musty-air.mp3",
     "description": "Não se sabe ao certo como um refrigerador chegou nas backrooms, porém sabe-se que após muito tempo quebrado em uma escola seus mecanismos interno encheram-se de água acelerando a proliferação de fungos, que ao entrar em contato com esse ambiente estranho acabou sofrendo algumas mutações.",
     "hp": 75,
-    "skills": ["Cuspir Mofo", "Mofar", "Brisa gélida", "Jato d'água", "Sufocar"],
+    "skills": [
+      "Cuspir Mofo",
+      "Mofar",
+      "Brisa gélida",
+      "Jato d'água",
+      "Sufocar"
+    ],
     "atk": 25,
     "dt": 115
   },
   {
     "name": "Faceless",
     "image": "faceless.png",
+    "audio": "faceless.mp3",
     "description": "Faceless é uma entidade aterrorizante que habita as Backrooms, caracterizada por sua forma alta e esquelética, sem traços faciais. Vagueia silenciosamente pelos corredores sombrios, instilando uma sensação de desespero em quem se atreve a cruzar seu caminho. Com sua presença inquietante, o Faceless se torna um predador psicológico, observando suas vítimas antes de atacar, deixando uma trilha de medo e confusão nas profundezas desse labirinto distorcido.",
     "hp": 120,
-    "skills": ["Soco", "Rasgar", "Intimidar", "Investida", "Grito ensurdecedor"],
+    "skills": [
+      "Soco",
+      "Rasgar",
+      "Intimidar",
+      "Investida",
+      "Grito ensurdecedor"
+    ],
     "atk": 20,
     "dt": 145
   },
   {
     "name": "Gnomago",
     "image": "gnomage.png",
+    "audio": "gnomage.mp3",
     "description": "Um pequeno gnomo que passou num ritual para se tornar um mago, caiu em tentação ao ver a força de seus poderes vindo a se tornar um mago sombrio. Agora aprisionado nas backrooms para morrer por outros gnomagos, ele busca escapar e se vingar de todos que ficaram contra ele.",
     "hp": 100,
-    "skills": ["Bola de fogo", "Drenar energia", "Cristais sombrios", "Espinhos terrestres", "Campo de força"],
+    "skills": [
+      "Bola de fogo",
+      "Drenar energia",
+      "Cristais sombrios",
+      "Espinhos terrestres",
+      "Campo de força"
+    ],
     "atk": 15,
     "dt": 120
   },
   {
     "name": "Hominho",
     "image": "little-man.png",
+    "audio": "little-man.mp3",
     "description": "Surgido do mofo desse lugar, essa criatura se tornou um caçador perfeito, capaz de rastrear suas vítimas e persegui-lás por quilômetros até achar uma brecha para o ataque, isso não lhe deixará em paz até alcançar seu objetivo ou morrer tentando. O que a motiva? saciar seu desejo de matar.",
     "hp": 80,
-    "skills": ["Agarrar", "Arranhar", "Abocanhar", "Golpe da graça", "Espreita mortal"],
+    "skills": [
+      "Agarrar",
+      "Arranhar",
+      "Abocanhar",
+      "Golpe da graça",
+      "Espreita mortal"
+    ],
     "atk": 25,
     "dt": 110
   },
   {
     "name": "Synthesemorfo",
     "image": "synthesemorph.png",
+    "audio": "synthesemorph.mp3",
     "description": "Explorando os vastos cantos do universo, um Alien acidentalmente adentra às backrooms, sem saber onde está nem como foi parar lá, seus instintos selvagens gritam: Sobreviva custe o que custar",
     "hp": 90,
-    "skills": ["Rabada", "Vomito ácido", "Adaptar ao ambiente", "Segunda boca", "Garras"],
+    "skills": [
+      "Rabada",
+      "Vomito ácido",
+      "Adaptar ao ambiente",
+      "Segunda boca",
+      "Garras"
+    ],
     "atk": 10,
     "dt": 105
   },
   {
     "name": "Smile",
     "image": "smile.png",
+    "audio": "smile.mp3",
     "description": "Smile é uma entidade sorridente e sinistra, com um rosto grotesco e um sorriso largo que esconde suas intenções maliciosas. Ela se esconde nas sombras, atraindo suas vítimas com promessas de segurança e conforto, antes de revelar sua verdadeira natureza predatória. Com sua risada perturbadora ecoando pelos corredores, o Smile transforma a esperança em terror, tornando-se um símbolo do engano que permeia as profundezas do labirinto.",
     "hp": 85,
     "skills": ["Esperança Despedaçada", "Predar", "Olhar Sinistro"],
