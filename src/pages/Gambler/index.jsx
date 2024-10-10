@@ -132,6 +132,10 @@ export default function Gambler({ setTime }) {
     const suitCount = countQuantityOfEachSuit(initialCards);
     setQuantityOfEachSuit(suitCount);
     setCardSuitGambler(getRandomSuit(initialCards));
+    const soundtrack = new Audio('/sounds/soundtrack/gambler.wav');
+    soundtrack.loop = true;
+    soundtrack.volume = 0.5;
+    soundtrack.play();
   }, []);
 
 
