@@ -8,7 +8,7 @@ export default function Jumpscare() {
 
   setTimeout(() => {
     navigate("/rooms/died/" + number);
-  }, 5000);
+  }, FIVE_SECONDS);
 
   return (
     <figure className=" flex mt-52 justify-center items-center scale-[400%]">
