@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import { useNavigate , useParams } from "react-router-dom";
 
 export default function Jumpscare() {
   const navigate = useNavigate();
   const {number} = useParams();
+
+  useEffect(() => {
+    new Audio('/sounds/monsters/stalker.mp3').play();
+  }, [])
 
   const FIVE_SECONDS = 5000;
 
