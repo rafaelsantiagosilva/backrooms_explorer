@@ -37,7 +37,7 @@
   },
   {
     "name": "Synthesemorfo",
-    "image": "sexomorph.png",
+    "image": "synthesemorph.png",
     "description": "Explorando os vastos cantos do universo, um Alien acidentalmente adentra às backrooms, sem saber onde está nem como foi parar lá, seus instintos selvagens gritam: Sobreviva custe o que custar",
     "hp": 90,
     "skills": ["Rabada", "Vomito ácido", "Adaptar ao ambiente", "Segunda boca", "Garras"],
