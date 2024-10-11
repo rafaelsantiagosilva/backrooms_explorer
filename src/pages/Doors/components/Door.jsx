@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { GiCardJoker, GiMonsterGrasp } from "react-icons/gi";
-import { forwardRef, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 
 const Door = forwardRef((props, ref) => {
   const [typeNextRoom, setTypeNextRoom] = useState('');
@@ -24,15 +24,19 @@ const Door = forwardRef((props, ref) => {
   }
 
   const randomTypeNextRoom = () => {
-    const types = ['battle', 'doors', 'gambler'];
-    const randomIndex = Math.round(Math.random() * types.length);
+    const types = ['battle', 'gambler'];
+    const randomIndex = Math.floor(Math.random() * types.length);
 
-    return types[randomIndex] ?? 'doors';
+    return types[randomIndex];
   }
-
+  
   const { number } = useParams();
   const [icon] = useState(() => generateRandomIcon());
-  const [probability] = useState(() => randomProbability());
+  const [probability, setProbability] = useState(() => randomProbability());
+
+  useEffect(() => {
+    setProbability(randomProbability());
+  }, []);
 
   const generateRandomNextRoom = () => {
     const number = randomProbability();
