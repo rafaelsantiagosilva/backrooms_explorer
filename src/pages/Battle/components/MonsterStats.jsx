@@ -1,14 +1,19 @@
 import PropTypes from "prop-types";
 import { FaHeart, FaStar } from "react-icons/fa";
+import { FaShield } from "react-icons/fa6";
 
 export default function MonsterStats({ monster, monsterRandomSkills, setMonsterRandomSkills }) {
   return (
-    <div className="bg-zinc-950 text-zinc-100 p-4 font-bold text-xl w-[25%] border border-r-8 border-b-8 border-gray-950 rounded-sm absolute bottom-1/2 left-[65%]">
+    <div className="bg-zinc-950 text-zinc-100 p-4 font-bold text-xl w-[25%] border border-r-8 border-b-8 border-gray-950 rounded-sm absolute bottom-[40dvh] left-[65%]">
       <table className="w-full">
         <tbody>
           <tr>
             <th className="text-start items-center gap-2 border p-2">HP<FaHeart className="inline-block mb-1 ml-1" /></th>
             <td className="text-start border p-2">{monster.hp}</td>
+          </tr>
+          <tr>
+            <th className="text-start items-center gap-2 border p-2">DF<FaShield className="inline-block mb-1 ml-1" /></th>
+            <td className="text-start border p-2">{monster.dt}</td>
           </tr>
           <tr>
             <th className="text-start items-center gap-2 border p-2">SKILLS <FaStar className="inline-block mb-1" /></th>
