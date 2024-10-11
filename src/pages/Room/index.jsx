@@ -15,9 +15,19 @@ export default function Room() {
   const navigate = useNavigate();
   const ONE_SECOND = 1000;
 
+  const initSoundtrack = () => {
+    const soundtrack = new Audio('/sounds/soundtrack/gambler.wav');
+    soundtrack.loop = true;
+    soundtrack.volume = 0.2;
+    soundtrack.play();
+  };
+
   useEffect(() => {
     const newTime = Number(localStorage.getItem("time"));
     setTime(newTime);
+
+    if (number == 1)
+      initSoundtrack();
   }, []);
 
   useEffect(() => {
