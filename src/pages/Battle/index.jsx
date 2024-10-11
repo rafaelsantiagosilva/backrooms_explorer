@@ -42,7 +42,13 @@ export default function Battle() {
   useEffect(() => {
     if (monster) {
       setMonsterRandomSkills(getRandomSkills(monster));
-      new Audio('/sounds/monsters/' + monster.audio).play();
+      const monsterAudio = new Audio('/sounds/monsters/' + monster.audio);
+      monsterAudio.play();
+
+      const THREE_SECONDS = 3000;
+      setTimeout(() => {  
+        monsterAudio.pause();
+      }, THREE_SECONDS);
     }
   }, [monster]);
 
