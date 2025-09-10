@@ -27,7 +27,7 @@ export default function Battle() {
     let aimValue = 0;
 
     if (countRepetitions(monsterRandomSkills).length > 0)
-      aimValue = permutationWithRepetition(monsterRandomSkills.length, countRepetitions(monsterRandomSkills));
+      aimValue = permutationWithRepetition(monsterRandomSkills.length, monsterRandomSkills);
     else
       aimValue = permutation(monsterRandomSkills.length);
 
@@ -46,7 +46,7 @@ export default function Battle() {
       monsterAudio.play();
 
       const THREE_SECONDS = 3000;
-      setTimeout(() => {  
+      setTimeout(() => {
         monsterAudio.pause();
       }, THREE_SECONDS);
     }
